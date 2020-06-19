@@ -74,13 +74,20 @@ int main() {
 
 	printf("There is %d characters in %s\n", stringLength(cPtrTwo), cPtrTwo);
 
+	printf("Contents of cPtr: %p\n", cPtr);
+	printf("Contents of cPtrTwo: %p\n\n", cPtrTwo);
 
+	printf("Dereferencing cPtr[0]: %c\n", *cPtr);
+	printf("Dereferencing cPtrTwo[0]: %c\n\n", *cPtrTwo);
 
+	printf("Lets play with some text input!\n");
+	printf("------------------------------------------\n");
 
+	char nameOne[20];
 
-
-
-
+	printf("Enter your name using fgets(): ");
+	fgets(nameOne, sizeof(nameOne), stdin);
+	printf("Your name is %s\n", nameOne);
 
 	return 0;
 }
