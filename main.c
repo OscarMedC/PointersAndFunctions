@@ -63,11 +63,16 @@ int main() {
 	printf("\n");
 
 	char* cPtr = "Hello World!";
+	char* cPtrTwo = "Hello My Old Friend!";
 
 	while (*cPtr != '\0') {
 		printf("%c", *cPtr);
 		cPtr++;
 	}
+
+	printf("\n");
+
+	printf("There is %d characters in %s\n", stringLength(cPtrTwo), cPtrTwo);
 
 
 
