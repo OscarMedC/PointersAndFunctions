@@ -87,7 +87,17 @@ int main() {
 
 	printf("Enter your name using fgets(): ");
 	fgets(nameOne, sizeof(nameOne), stdin);
-	printf("Your name is %s\n", nameOne);
+	printf("Your name is %s\n\n", nameOne);
+
+	printf("Lets look at some differences between a test[7] and char* tPtr!\n");
+	printf("------------------------------------------\n");
+	char test[7] = "Hejsan";
+	char* tPtr = "Hejsan";
+
+	printf("Contents of tPtr: %p \n", tPtr);
+	printf("Address of tPtr: %p \n", &tPtr);
+	printf("Contents of test[0]: %c\n", test[0]);
+	printf("Contents of tPtr: %c\n", *tPtr);
 
 	return 0;
 }
